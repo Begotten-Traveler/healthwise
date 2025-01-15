@@ -2,6 +2,8 @@
     --header-background-color: #5DC0FE;
     --header-color: #fff;
     --header-background-hover-color: rgb(218, 218, 26);
+    --btn--background--color: #FFE636;
+    --btn--color: #410C6A;
 }
 
 *{
@@ -20,7 +22,7 @@ body{
     padding: 20px 40px;
 }
 
-.wrapper{
+.header--wrapper{
     display: flex;
     justify-content: space-between;
     max-width: 1200px;
@@ -58,6 +60,83 @@ body{
 }
 
 #sign--up a:hover{
-    background-color: var(--header-background-hover-color);
+    background-color: var(--btn--color);
     color: var(--header-color);
+}
+
+/* Hero */
+.header--section{
+    padding: 50px 20px;
+    text-align: center;
+    color: var(--header-color);
+    font-weight: bold;
+    font-style: normal;
+    max-width: 80%;
+    margin: auto;
+}
+
+#hero--h1{
+    line-height: 60px;
+    font-size: 76px;
+    font-weight: 700;
+    padding-bottom: 30px;
+}
+
+#hero--p{
+    font-size: 29px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    max-width: 70%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+#header--quiz--btn{
+    background-color: var(--btn--background--color);
+    color: var(--btn--color);
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    padding: 15px;
+    border-radius: 100px;
+    border-style: none;
+    font-size: 23px;
+    width: 320px;
+    height: 65px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+#header--quiz--btn:hover{
+    background-color: var(--btn--color);
+    color: var(--header-color)
+}
+.stats--review--section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.stats{
+    text-align: center;
+    flex: 1;
+    min-width: 200px;
+}
+
+.stat--text{
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.divider {
+  border-left: 3px solid var(--btn--color);
+  height: 20px;
+}
+
+.stat--number {
+    font-size: 28px;
+    font-weight: 800;
 }
